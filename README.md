@@ -10,15 +10,15 @@
 
 <p align="center">
 
-  <a href="https://codeship.com/projects/136049"><img alt="Build Status" src="https://codeship.com/projects/ec5e9f90-bbe9-0133-6ce6-5a73e45d98be/status?branch=master"></a>
+  <a href="https://codeship.com/projects/141662"><img alt="Build Status" src="https://codeship.com/projects/3f46be70-d1d3-0133-88ed-62f740529cd9/status?branch=master"></a>
 
-  <a href="https://travis-ci.org/mabrasil/resistance.js"><img alt="Build Status" src="https://travis-ci.org/mabrasil/resistance.js.svg?branch=master"></a>
+  <a href="https://travis-ci.org/mabrasil/capacitance.js"><img alt="Build Status" src="https://travis-ci.org/mabrasil/capacitance.js.svg?branch=master"></a>
 
-  <a href="https://codeclimate.com/github/mabrasil/resistance.js"><img alt="Code Climate" src="https://codeclimate.com/github/mabrasil/resistance.js/badges/gpa.svg"/></a>
+  <a href="https://codeclimate.com/github/mabrasil/capacitance.js"><img alt="Code Climate" src="https://codeclimate.com/github/mabrasil/capacitance.js/badges/gpa.svg"/></a>
 
-  <a href="https://david-dm.org/mabrasil/resistance.js" title="Dependency status"><img src="https://david-dm.org/mabrasil/resistance.js.svg"/></a>
+  <a href="https://david-dm.org/mabrasil/capacitance.js" title="Dependency status"><img src="https://david-dm.org/mabrasil/capacitance.js.svg"/></a>
 
-  <a href="https://david-dm.org/mabrasil/resistance.js#info=devDependencies" title="devDependency status"><img src="https://david-dm.org/mabrasil/resistance.js/dev-status.svg"/></a>
+  <a href="https://david-dm.org/mabrasil/capacitance.js#info=devDependencies" title="devDependency status"><img src="https://david-dm.org/mabrasil/capacitance.js/dev-status.svg"/></a>
 
 </p>
 
