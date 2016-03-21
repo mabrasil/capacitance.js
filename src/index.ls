@@ -4,8 +4,8 @@
 
 module.exports = (circuit, type) ->
 
-  series = fold1 (+)
-  parallel = -> (^ -1) fold1 (+), (map (^ -1), &0)
+  series = -> (^ -1) fold1 (+), (map (^ -1), &0)
+  parallel = fold1 (+)
 
   switch type
   | \series   \s => series circuit

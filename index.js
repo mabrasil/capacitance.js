@@ -3,10 +3,7 @@ var ref$, map, fold1;
 ref$ = require('prelude-ls'), map = ref$.map, fold1 = ref$.fold1;
 module.exports = function(circuit, type){
   var series, parallel;
-  series = fold1(curry$(function(x$, y$){
-    return x$ + y$;
-  }));
-  parallel = function(){
+  series = function(){
     return (function(it){
       return Math.pow(it, -1);
     })(fold1(curry$(function(x$, y$){
@@ -15,6 +12,9 @@ module.exports = function(circuit, type){
       return Math.pow(it, -1);
     }), arguments[0])));
   };
+  parallel = fold1(curry$(function(x$, y$){
+    return x$ + y$;
+  }));
   switch (type) {
   case 'series':
   case 's':
