@@ -23,7 +23,7 @@ module.exports = function(circuit, type){
   case 'p':
     return parallel(circuit);
   default:
-    return 'Please enter a valid type of resistors association.';
+    return 'Please enter a valid type of capacitors association.';
   }
 };
 function curry$(f, bound){
