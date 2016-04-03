@@ -56,7 +56,7 @@ capacitance([1, 2, 3], 'series');
 capacitance([1, 2, 3], 'parallel');
 //=> 6
 
-console.log([1, 2, 3], 'parallel') + 'Ω')
+console.log([1, 2, 3], 'parallel') + 'F')
 // 6F
 ```
 
