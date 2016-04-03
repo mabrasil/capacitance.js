@@ -43,7 +43,7 @@ $ npm install --save capacitance.js
 
 <p align="center">
   <a href="">
-    <img alt="Screenshot" src="http://i.imgur.com/SV3HhL7.png" width="900px">
+    <img alt="Screenshot" src="http://i.imgur.com/bN2kBpP.png" width="900px">
   </a>
 </p>
 
