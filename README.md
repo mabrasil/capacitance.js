@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Simple module to calculate electrical resistance in series and parallel circuits.
+  Simple module to calculate electrical capacitance in series and parallel circuits.
 </p>
 
 <p align="center">
@@ -32,12 +32,11 @@
 - [Contributing](#contributing)
 - [Motivation](#motivation)
 - [License](#license)
-- [Credits](#credits)
 
 ## Installation
 
 ```sh
-$ npm install --save resistance.js
+$ npm install --save capacitance.js
 ```
 
 ## Usage
@@ -49,27 +48,27 @@ $ npm install --save resistance.js
 </p>
 
 ```js
-const resistance = require('resistance.js');
+const capacitance = require('capacitance.js');
 
-resistance([1, 2, 3], 'series');
-//=> 6
-
-resistance([1, 2, 3], 'parallel');
+capacitance([1, 2, 3], 'series');
 //=> 0.5454545454545455
 
-console.log(resistance([1, 2, 3], 'series') + 'Ω')
-// 6Ω
+capacitance([1, 2, 3], 'parallel');
+//=> 6
+
+console.log([1, 2, 3], 'parallel') + 'Ω')
+// 6F
 ```
 
 ## API
 
-### `resistance(circuit, type)`
+### `capacitance(circuit, type)`
 
 #### `circuit`
 
 *Type*: `array`
 
-*Description*: Values of resistors associated in your circuit.
+*Description*: Values of capacitors associated in your circuit.
 
 *Example*: `[1, 2, 3, 4]`
 
@@ -77,78 +76,36 @@ console.log(resistance([1, 2, 3], 'series') + 'Ω')
 
 *Type*: `string`
 
-*Description*: Type of resistors association in your circuit.
+*Description*: Type of capacitors association in your circuit.
 
 *Options*:
 
-  - `'series'` or `'s'`: Resistors in series.
-  - `'parallel'` or `'p'`: Resistors in parallel.
+  - `'series'` or `'s'`: Capacitors in series.
+  - `'parallel'` or `'p'`: Capacitors in parallel.
 
 ## Understand the Topic
 
-Combinating resistors is very common in many circuits, when we want to reach a
-resistance level which only one resistor is not enough.
+Combinating capacitors is very common in many circuits, when we want to reach a
+capacitance level which only one capacitor is not enough.
 
-### Resistors in Series
+### Capacitors in Series
 
-Let's take the following example:
-
-![Series Example](http://i.imgur.com/qQ64hx7.gif)
-
-In an association of series resistors, the equivalent resistor is equal to the
-sum of all resistors that make up the association:
-
-```
-Req = R1 + R2 + R3 + R4 + ...
-```
-
-Also, the voltage in the electric generator is equal to the sum of all the
-voltages of resistors:
-
-```
-V = V1 + V2 + V3 + V4 + ...
-```
-
-The electric current flowing in each resistor is always the same:
-
-```
-i = i1 = i2 = i3 = i4 ...
-```
-
-And the initial example becomes:
-
-![Final](http://i.imgur.com/wZxuZ3Q.gif)
-
-### Resistors in Parallel
-
-Let's take the following example:
-
-![Parallel Example](http://i.imgur.com/0eMK21o.gif)
-
-In an association of parallel resistors, the equivalent resistor is equal to
-the inverse of the sum of all the inverted resistors which make up the
+In an association of series capacitors, the equivalent capacitor is equal to
+the inverse of the sum of all the inverted capacitors which make up the
 association:
 
 ```
-1 / Req = (1 / R1) + (1 / R2) + (1 / R3) + (1 / R4) + ...
+1 / Ceq = (1 / C1) + (1 / C2) + (1 / C3) + ... + (1 / Cn)
 ```
 
-Also, the current in the equivalent resistor is equal to the sum of currents
-from the resistors:
+### Capacitors in Parallel
+
+In an association of parallel capacitors, the equivalent capacitor is equal to the
+sum of all capacitors that make up the association:
 
 ```
- i = i1 + i2 + i3 + i4 + ...
+Ceq = C1 + C2 + C3 + ... + Cn
 ```
-
-The voltage in the electric generator is always the same:
-
-```
-V = V1 = V2 = V3 = V4 = ...
-```
-
-And the initial example becomes:
-
-![Final](http://i.imgur.com/sEKnVFm.gif)
 
 ## Development
 
@@ -172,16 +129,11 @@ Contributions are very welcome! If you'd like to contribute, these
 
 ## Motivation
 
-I was studying resistors association because of my *Constant Current* discipline
+I was studying capacitors association because of my *Constant Current* discipline
 and then decided to put the basics into practice.
 
 ## License
 
-[resistance.js](https://github.com/mabrasil/resistance.js) is distributed under
+[capacitance.js](https://github.com/mabrasil/capacitance.js) is distributed under
 the MIT License, available in this repository. All contributions are assumed to
 be also licensed under the MIT License.
-
-## Credits
-
-Some contents used in the [explanation section](#understand-the-topic) were
-taken from [here](http://www.infoescola.com/fisica/associacao-de-resistores/).
